@@ -1,8 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION['role']) && isset($_SESSION['id'])){
-?>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,9 +38,3 @@ if (isset($_SESSION['role']) && isset($_SESSION['id'])){
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
 </body>
 </html>
-<?php } else{
-  $em = "Login First.";
-  header("Location: login.php?error=$em");
-  exit();
-}
-?>
