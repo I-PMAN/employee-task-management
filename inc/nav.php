@@ -16,25 +16,25 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="user.php">
               <i class="fa fa-users" aria-hidden="true"></i>
               <span>Manage Users</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="create_task.php">
               <i class="fa fa-plus" aria-hidden="true"></i>
               <span>Create Task</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="tasks.php">
               <i class="fa fa-tasks" aria-hidden="true"></i>
               <span>All Tasks</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="notifications.php">
               <i class="fa fa-bell" aria-hidden="true"></i>
               <span>Notifications</span>
             </a>
