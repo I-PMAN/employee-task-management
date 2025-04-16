@@ -13,7 +13,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 if (isset($_POST['user_name']) && isset($_POST['password'])) {
 
-    if (isset($_POST['user_name']) && isset($_POST['password']) && isset($_POST['full_name'])) {
+    if (isset($_POST['user_name']) && isset($_POST['password']) && isset($_POST['full_name']) && $_SESSION['role'] == 'admin') {
     }
     include "../DB_connection.php";
     function validate_input($data)
