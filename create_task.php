@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
+if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == 'admin') {
     include "DB_connection.php";
     include "app/Model/User.php";
     $users = get_all_users($conn);
@@ -64,7 +64,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
             </section>
         </div>
         <script type="text/javascript">
-            var active = document.querySelector("#navlist li:nth-child(3)");
+            var active = document.querySelector("#navList li:nth-child(3)");
             active.classList.add("active");
         </script>
     </body>
